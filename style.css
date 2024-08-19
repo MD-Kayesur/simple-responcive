@@ -1,6 +1,7 @@
 .row{
     height: 200px;
     display: flex;
+    flex-wrap: wrap;
     margin-bottom: 5px;
     gap: 5px;
 }
@@ -23,6 +24,18 @@
     gap: 5px;
    
 }
+ @media screen and (max-width:544px) {
+     .row{
+        /* flex-direction: column;
+        height: auto; */
+        display: block;
+        height: auto;
+         
+     }
+    .grid{
+        grid-template-columns: repeat(1,1fr);
+    }
+ }
 
 
 
